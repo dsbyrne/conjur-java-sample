@@ -1,0 +1,17 @@
+---
+- !policy
+  id: app
+  body:
+    - &variables
+      - !variable password1
+      - !variable password2
+
+    - !layer
+
+    - !host-factory
+      layers: [ !layer ]
+
+    - !permit
+      role: !layer
+      privilege: [ read, execute ]
+      resource: *variables
