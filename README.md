@@ -1,5 +1,4 @@
 # conjur-java-sample
---------------------
 ## Setup
 Scripts have been provided to automate the setup. It is recommended that both scripts authenticate as the same Conjur user.
 ### Scripts
